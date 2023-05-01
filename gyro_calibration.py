@@ -33,9 +33,10 @@ for i in range(3020):
     progress_bar(3020, i+1)
 
 os.system("clear")
-print("Calculating X Bias...")
-bias_calculation(X_Values)
-print("Calculating Y Bias...")
-bias_calculation(Y_Values)
-print("Calculating Z Bias...")
-bias_calculation(Z_Values)
+#This is only needed if the values are not calculated from the logging program
+#print("Calculating X Bias...")
+#bias_calculation(X_Values)
+#print("Calculating Y Bias...")
+#bias_calculation(Y_Values)
+#print("Calculating Z Bias...")
+#bias_calculation(Z_Values)
