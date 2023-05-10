@@ -8,7 +8,7 @@ SERVER = "192.168.178.29" #Hardcoded ip address
 ADDR = (SERVER, PORT)
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
-EXPORT = None
+#file1 = open("file.txt", "w")
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
@@ -22,9 +22,12 @@ def handleClient(conn, addr):
         if msg_length:
             msg_length = int(msg_length)
             msg = conn.recv(msg_length).decode(FORMAT)
-            EXPORT = msg
             if msg == DISCONNECT_MESSAGE:
                 connected = False
+            file1 = open("file.txt", "w")
+            file1.write(msg)
+            #file1.flush()
+            file1.close()
             print(f"[{addr}] {msg}")
     conn.close()
 

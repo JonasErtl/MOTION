@@ -18,5 +18,6 @@ while True:
     client.send(gyro_data)
     time.sleep(0.1)
     os.system('clear')
-
+if KeyboardInterrupt:
+    client.send("!DISCONNECT")
 

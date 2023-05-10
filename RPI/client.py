@@ -20,4 +20,4 @@ def send(msg):
 
 #send("Test")
 #send("Another Test") 
-send(DISCONNECT_MESSAGE)
+#send(DISCONNECT_MESSAGE)
