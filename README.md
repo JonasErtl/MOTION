@@ -1,4 +1,4 @@
-## MOTION - Movement Observation and Tracking using IMU On-Hand Navigation
+## MOTION - Movement Observation and Tracking using IMU On-Hand Navigation -- currentley not working
 
 Alternative name: SHACE - System for Hand Acceleration and Coordinate Examination  
 
